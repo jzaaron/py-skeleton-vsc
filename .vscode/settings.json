@@ -1,12 +1,19 @@
 {
+    "files.exclude": {
+        "**/__pycache__": true
+    },
     "[python]": {
-        "editor.defaultFormatter": "ms-python.black-formatter",
         "editor.formatOnSave": true,
+        "editor.defaultFormatter": "ms-python.black-formatter",
         "editor.codeActionsOnSave": {
             "source.organizeImports": true
         },
     },
-    "python.formatting.provider": "black",
+    "isort.args": [
+        "--profile",
+        "black"
+    ],
+    "editor.formatOnSave": true,
     "python.linting.enabled": true,
     "python.linting.pylintEnabled": true
 }
